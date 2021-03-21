@@ -1,11 +1,14 @@
 {
-  "name": "pm-header-001001001",
-  "version": "1.0.8",
+  "name": "pm-header-001",
+  "version": "1.0.7",
   "description": "> TODO: description",
   "author": "pengmeng <1575170534@qq.com>",
   "homepage": "https://github.com/pengmeng123/lerna-test1#readme",
   "license": "ISC",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "http://r.cnpmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pengmeng123/lerna-test1.git"
