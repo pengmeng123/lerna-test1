@@ -1,67 +1,49 @@
-0 silly argv {
-0 silly argv   _: [ 'publish' ],
-0 silly argv   composed: 'publish',
-0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'lerna',
-0 silly argv   bump: 'from-package'
-0 silly argv }
+0 silly argv { _: [ 'version' ], lernaVersion: '4.0.0', '$0': 'lerna' }
 1 notice cli v4.0.0
 2 verbose rootPath /Users/pengmeng/Desktop/vue/my-story1
 3 info versioning independent
-4 verbose session b72ad650cfa8ae47
-5 verbose user-agent lerna/4.0.0/node@v12.18.3+x64 (darwin)
-6 verbose git-describe undefined => "pm-header-001001001@1.0.8-0-g180cc02"
-7 silly git-describe parsed => {"lastTagName":"pm-header-001001001@1.0.8","lastVersion":"1.0.8","refCount":"0","sha":"180cc02","isDirty":false}
-8 silly getUnpublishedPackages
-9 warn Unable to determine published version, assuming "pm-header-001001001" unpublished.
-10 info publish Publishing packages to npm...
-11 notice Skipping all user and access validation due to third-party registry
-12 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
-13 warn ENOLICENSE Package pm-header-001001001 is missing a license.
-13 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
-13 warn ENOLICENSE See https://choosealicense.com for additional guidance.
-14 silly getCurrentSHA
-15 verbose getCurrentSHA 180cc02e3a2833a6703218462ec8d13e485ed717
-16 silly lifecycle No script for "prepublish" in "my-story1", continuing
-17 silly lifecycle No script for "prepare" in "my-story1", continuing
-18 silly lifecycle No script for "prepublishOnly" in "my-story1", continuing
-19 silly lifecycle No script for "prepack" in "my-story1", continuing
-20 verbose pack-directory packages/Header
-21 silly lifecycle No script for "prepublish" in "pm-header-001001001", continuing
-22 silly lifecycle No script for "prepare" in "pm-header-001001001", continuing
-23 silly lifecycle No script for "prepublishOnly" in "pm-header-001001001", continuing
-24 silly lifecycle No script for "prepack" in "pm-header-001001001", continuing
-25 silly lifecycle No script for "postpack" in "pm-header-001001001", continuing
-26 verbose packed packages/Header
-27 silly lifecycle No script for "postpack" in "my-story1", continuing
-28 verbose publish pm-header-001001001
-29 silly FetchError: request to http://r.npmjs.org/pm-header-001001001 failed, reason: getaddrinfo ENOTFOUND r.npmjs.org
-29 silly     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:97:14)
-29 silly     at ClientRequest.emit (events.js:315:20)
-29 silly     at Socket.socketErrorListener (_http_client.js:426:9)
-29 silly     at Socket.emit (events.js:327:22)
-29 silly     at emitErrorNT (internal/streams/destroy.js:92:8)
-29 silly     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-29 silly     at processTicksAndRejections (internal/process/task_queues.js:84:21)
-29 silly  FetchError: request to http://r.npmjs.org/pm-header-001001001 failed, reason: getaddrinfo ENOTFOUND r.npmjs.org
-29 silly     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:97:14)
-29 silly     at ClientRequest.emit (events.js:315:20)
-29 silly     at Socket.socketErrorListener (_http_client.js:426:9)
-29 silly     at Socket.emit (events.js:327:22)
-29 silly     at emitErrorNT (internal/streams/destroy.js:92:8)
-29 silly     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-29 silly     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
-29 silly   code: 'ENOTFOUND',
-29 silly   errno: 'ENOTFOUND',
-29 silly   syscall: 'getaddrinfo',
-29 silly   hostname: 'r.npmjs.org',
-29 silly   type: 'system'
-29 silly }
-30 error ENOTFOUND request to http://r.npmjs.org/pm-header-001001001 failed, reason: getaddrinfo ENOTFOUND r.npmjs.org
-31 error FetchError: request to http://r.npmjs.org/pm-header-001001001 failed, reason: getaddrinfo ENOTFOUND r.npmjs.org
-31 error     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:97:14)
-31 error     at ClientRequest.emit (events.js:315:20)
-31 error     at Socket.socketErrorListener (_http_client.js:426:9)
-31 error     at Socket.emit (events.js:327:22)
-31 error     at emitErrorNT (internal/streams/destroy.js:92:8)
-31 error     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch master
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "pm-header-001001001@1.0.8-1-g3bcbc95" => {"lastTagName":"pm-header-001001001@1.0.8","lastVersion":"1.0.8","refCount":"1","sha":"3bcbc95","isDirty":false}
+14 info Looking for changed packages since pm-header-001001001@1.0.8
+15 silly checking diff packages/Header
+16 silly found diff in packages/Header/package.json
+17 verbose filtered diff [ 'packages/Header/package.json' ]
+18 verbose updated pm-header-001001001
+19 verbose git-describe undefined => "pm-header-001001001@1.0.8-1-g3bcbc95"
+20 silly git-describe parsed => {"lastTagName":"pm-header-001001001@1.0.8","lastVersion":"1.0.8","refCount":"1","sha":"3bcbc95","isDirty":false}
+21 info execute Skipping releases
+22 silly lifecycle No script for "preversion" in "my-story1", continuing
+23 silly lifecycle No script for "preversion" in "pm-header-001001001", continuing
+24 silly lifecycle No script for "version" in "pm-header-001001001", continuing
+25 silly lifecycle No script for "version" in "my-story1", continuing
+26 silly gitAdd [ 'packages/Header/package.json' ]
+27 silly gitCommit Publish
+27 silly gitCommit
+27 silly gitCommit  - pm-header-001001001@1.0.8
+28 verbose git [
+28 verbose git   'commit',
+28 verbose git   '-F',
+28 verbose git   '/private/var/folders/fx/9bvd7mds1qgd0ym4tggw39y40000gn/T/1c4f02e8-3753-4008-9abf-68b74e080adb/lerna-commit.txt'
+28 verbose git ]
+29 silly gitTag pm-header-001001001@1.0.8
+30 verbose git [
+30 verbose git   'tag',
+30 verbose git   'pm-header-001001001@1.0.8',
+30 verbose git   '-m',
+30 verbose git   'pm-header-001001001@1.0.8'
+30 verbose git ]
+31 error Error: Command failed with exit code 128: git tag pm-header-001001001@1.0.8 -m pm-header-001001001@1.0.8
+31 error fatal: tag 'pm-header-001001001@1.0.8' already exists
+31 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
+31 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
+31 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+31 error     at async Promise.all (index 0)
+31 error     at async Promise.all (index 0)
