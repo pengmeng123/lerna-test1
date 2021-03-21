@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "pengmeng <1575170534@qq.com>",
   "homepage": "https://github.com/pengmeng123/lerna-test1#readme",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "main": "index.js",
   "repository": {
     "type": "git",

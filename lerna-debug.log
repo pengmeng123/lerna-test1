@@ -8,42 +8,13 @@
 7 verbose currentBranch master
 8 silly remoteBranchExists
 9 silly isBehindUpstream
-10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
-11 silly hasTags
-12 verbose hasTags true
-13 silly git-describe.sync "pm-header-001001001@1.0.8-1-g3bcbc95" => {"lastTagName":"pm-header-001001001@1.0.8","lastVersion":"1.0.8","refCount":"1","sha":"3bcbc95","isDirty":false}
-14 info Looking for changed packages since pm-header-001001001@1.0.8
-15 silly checking diff packages/Header
-16 silly found diff in packages/Header/package.json
-17 verbose filtered diff [ 'packages/Header/package.json' ]
-18 verbose updated pm-header-001001001
-19 verbose git-describe undefined => "pm-header-001001001@1.0.8-1-g3bcbc95"
-20 silly git-describe parsed => {"lastTagName":"pm-header-001001001@1.0.8","lastVersion":"1.0.8","refCount":"1","sha":"3bcbc95","isDirty":false}
-21 info execute Skipping releases
-22 silly lifecycle No script for "preversion" in "my-story1", continuing
-23 silly lifecycle No script for "preversion" in "pm-header-001001001", continuing
-24 silly lifecycle No script for "version" in "pm-header-001001001", continuing
-25 silly lifecycle No script for "version" in "my-story1", continuing
-26 silly gitAdd [ 'packages/Header/package.json' ]
-27 silly gitCommit Publish
-27 silly gitCommit
-27 silly gitCommit  - pm-header-001001001@1.0.8
-28 verbose git [
-28 verbose git   'commit',
-28 verbose git   '-F',
-28 verbose git   '/private/var/folders/fx/9bvd7mds1qgd0ym4tggw39y40000gn/T/1c4f02e8-3753-4008-9abf-68b74e080adb/lerna-commit.txt'
-28 verbose git ]
-29 silly gitTag pm-header-001001001@1.0.8
-30 verbose git [
-30 verbose git   'tag',
-30 verbose git   'pm-header-001001001@1.0.8',
-30 verbose git   '-m',
-30 verbose git   'pm-header-001001001@1.0.8'
-30 verbose git ]
-31 error Error: Command failed with exit code 128: git tag pm-header-001001001@1.0.8 -m pm-header-001001001@1.0.8
-31 error fatal: tag 'pm-header-001001001@1.0.8' already exists
-31 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
-31 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
-31 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
-31 error     at async Promise.all (index 0)
-31 error     at async Promise.all (index 0)
+10 error Error: Command failed with exit code 1: git remote update
+10 error fatal: unable to access 'https://github.com/pengmeng123/lerna-test1.git/': Failed to connect to github.com port 443: Operation timed out
+10 error error: Could not fetch origin
+10 error Fetching origin
+10 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
+10 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:186:17)
+10 error     at Object.execSync (/usr/local/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:39:16)
+10 error     at updateRemote (/usr/local/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:34:16)
+10 error     at isBehindUpstream (/usr/local/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:16:3)
+10 error     at VersionCommand.initialize (/usr/local/lib/node_modules/lerna/node_modules/@lerna/version/index.js:153:9)
